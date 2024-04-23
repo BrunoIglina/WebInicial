@@ -5,8 +5,15 @@
  .container{
     display: flex;
     height: 100vh;
-    
+    flex-direction: column;
  }
+/* query para hacer mobile first validando con tamaño de pantalla */
+@media (min-width: 768px){
+    .container{
+        flex-direction: row;
+    }
+}
+
  .container-left{
     width: 20%;
     background-color: white;
